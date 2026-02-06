@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "driftdetect"
+version = "1.0.0"
+description = "One-line drift detection for ML APIs. Like Pydantic or a rate limiter, but for data drift."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Valentyn Danylchuk", email = "val@danylchuk.com" }
+]
+keywords = ["machine-learning", "drift-detection", "mlops", "fastapi", "monitoring"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Framework :: FastAPI",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "fastapi>=0.100.0",
+    "httpx>=0.24.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/valdanylchuk/driftdetect"
+Repository = "https://github.com/valdanylchuk/driftdetect"
+Issues = "https://github.com/valdanylchuk/driftdetect/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["driftdetect"]
