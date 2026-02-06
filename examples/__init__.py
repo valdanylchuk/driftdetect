@@ -1,1 +1,1 @@
-"""driftdetect examples."""
+"""checkdrift examples."""

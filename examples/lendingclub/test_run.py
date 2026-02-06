@@ -12,7 +12,7 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-# Enable driftdetect logging, silence httpx
+# Enable checkdrift logging, silence httpx
 logging.basicConfig(level=logging.INFO, format="%(name)s - %(levelname)s - %(message)s")
 logging.getLogger("httpx").setLevel(logging.WARNING)
 

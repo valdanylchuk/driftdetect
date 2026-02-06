@@ -1,5 +1,5 @@
 """
-driftdetect - One-line drift detection for ML APIs.
+checkdrift - One-line drift detection for ML APIs.
 
 "Like Pydantic or a rate limiter, but for data drift."
 """

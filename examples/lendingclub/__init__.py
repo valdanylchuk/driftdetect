@@ -1,1 +1,1 @@
-"""LendingClub example for driftdetect."""
+"""LendingClub example for checkdrift."""

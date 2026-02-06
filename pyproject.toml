@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "driftdetect"
+name = "checkdrift"
 version = "1.0.0"
 description = "One-line drift detection for ML APIs. Like Pydantic or a rate limiter, but for data drift."
 readme = "README.md"
@@ -46,4 +46,4 @@ Repository = "https://github.com/valdanylchuk/driftdetect"
 Issues = "https://github.com/valdanylchuk/driftdetect/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["driftdetect"]
+packages = ["checkdrift"]

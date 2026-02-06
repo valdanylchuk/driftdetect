@@ -16,7 +16,7 @@ Demonstrates drift detection on a loan triage API using LendingClub data.
 
 ```bash
 # Install dependencies
-pip install driftdetect fastapi uvicorn
+pip install checkdrift fastapi uvicorn
 
 # Run the API
 uvicorn examples.lendingclub.api:app --port 8000
@@ -38,9 +38,9 @@ python examples/lendingclub/test_run.py
 Output:
 
 ```
-driftdetect - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 50 requests: {'annual_inc': {'psi': 0.5026, ...}, 'dti': {'psi': 0.1764, ...}, 'loan_amnt': {'psi': 0.1239, ...}, 'int_rate': {'psi': 0.3146, ...}}
-driftdetect - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 100 requests: ...
-driftdetect - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 150 requests: ...
+checkdrift - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 50 requests: {'annual_inc': {'psi': 0.5026, ...}, 'dti': {'psi': 0.1764, ...}, 'loan_amnt': {'psi': 0.1239, ...}, 'int_rate': {'psi': 0.3146, ...}}
+checkdrift - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 100 requests: ...
+checkdrift - WARNING - Drift ALARM in ['annual_inc', 'dti', 'loan_amnt', 'int_rate'] after 150 requests: ...
 Sending 200 requests to /triage...
 Drift logs will appear below:
 

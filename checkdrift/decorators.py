@@ -14,7 +14,7 @@ from typing import Callable
 import numpy as np
 from scipy import stats
 
-logger = logging.getLogger("driftdetect")
+logger = logging.getLogger("checkdrift")
 
 
 class DriftSeverity(Enum):
@@ -184,7 +184,7 @@ class DriftMonitor:
             try:
                 self.callback(result)
             except Exception as e:
-                logger.error(f"[DriftDetect] Callback error: {e}")
+                logger.error(f"[checkdrift] Callback error: {e}")
         else:
             drifted = result.drifted_features
             severity = result.severity.value.upper()

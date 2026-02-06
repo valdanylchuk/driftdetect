@@ -1,4 +1,4 @@
-# driftdetect
+# checkdrift
 
 One-line drift detection for ML APIs. Like Pydantic or a rate limiter, but for data drift.
 
@@ -14,7 +14,7 @@ async def predict(application: LoanApplication):
 ## Installation
 
 ```bash
-pip install driftdetect
+pip install checkdrift
 ```
 
 ## What It Does

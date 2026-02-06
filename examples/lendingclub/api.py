@@ -16,7 +16,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 
-from driftdetect import check_drift
+from checkdrift import check_drift
 
 from .models import LoanApplication, TriageResult, LoanTriageModel
 
@@ -37,7 +37,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Loan Triage API",
-    description="Demo API with drift detection using driftdetect.",
+    description="Demo API with drift detection using checkdrift.",
     version="1.0.0",
     lifespan=lifespan,
 )
